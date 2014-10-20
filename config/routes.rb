@@ -4,7 +4,11 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'projects#index'
-
+  get 'lean' => 'projects#lean' 
+  get 'processstrategy' => 'projects#processstrategy'
+  get 'procurement' => 'projects#procurement'
+  get 'accounting' => 'projects#accounting'
+  get 'supplychain' => 'projects#supplychain'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

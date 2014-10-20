@@ -1,20 +1,27 @@
-%div#carousel-main-page.carousel.slide{"data-ride" => "carousel"}
-  %ol.carousel-indicators
-    %li.active{"data-target" => "#carousel-main-page", "data-slide-to" => "0"}
-    %li{"data-target" => "#carousel-main-page", "data-slide-to" => "1"}
-    %li{"data-target" => "#carousel-main-page", "data-slide-to" => "2"}
+%div.container
+  %div#carousel-main-page.carousel.slide{"data-ride" => "carousel"}
+    %ol.carousel-indicators
+      %li.active{"data-target" => "#carousel-main-page", "data-slide-to" => "0"}
+      %li{"data-target" => "#carousel-main-page", "data-slide-to" => "1"}
+      %li{"data-target" => "#carousel-main-page", "data-slide-to" => "2"}
 
-  %div.carousel-inner
-    %div.item.active
-      %img{:src => "http://lorempixel.com/400/200/"}
-      %div.carousel-caption Slide Caption 1
-    %div.item
-      %img{:src => "http://lorempixel.com/400/200/sports/"}
-    %div.item
-      %img{:src => "http://lorempixel.com/400/200/sports/Dummy-Text/"}
+    %div.carousel-inner
+      %div.item.active#item1
+        = image_tag 'complexity.jpg'
+        %div.carousel-caption 
+          %h2 Complexity Is a Crude State
+      %div.item
+        = image_tag 'waterdrop.png'
+        %div.carousel-caption
+          %h2 Simplicity is the Result of Profound Reflection
+      %div.item
+        = image_tag 'brainstorm.jpg'
+        %div.carousel-caption
+          %div.well
+            %h3.primary-text Software Solutions for business problems.
+            %a{:href => "#", :class => "btn btn-primary"} Learn more
+    %a.left.carousel-control{:href => "#carousel-main-page", :role => "button", "data-slide" => "prev"}
+      %span.glyphicon.glyphicon-chevron-left
 
-  %a.left.carousel-control{:href => "#carousel-main-page", :role => "button", "data-slide" => "prev"}
-    %span.glyphicon.glyphicon-chevron-left
-
-  %a.right.carousel-control{:href => "#carousel-main-page", :role => "button", "data-slide" => "next"}
-    %span.glyphicon.glyphicon-chevron-right
+    %a.right.carousel-control{:href => "#carousel-main-page", :role => "button", "data-slide" => "next"}
+      %span.glyphicon.glyphicon-chevron-right

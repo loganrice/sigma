@@ -6,18 +6,17 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{:href => "#"} Sigma Group
     %div.navbar-collapse.collapse#sigma-header-links
       %ul.nav.navbar-nav
         %li.active
-          %a{:href => "#"} Innovation
+          = link_to 'Innovation', root_path
         %li
-          %a{:href => "#"} Process Strategy
+          = link_to 'Process Strategy', processstrategy_path
         %li
-          %a{:href => "#"} Procurement
+          = link_to 'Procurement', procurement_path
         %li
-          %a{:href => "#"} Finance
+          = link_to 'Accounting', accounting_path
         %li
-          %a{:href => "#"} Supply Chain
+          = link_to 'Supply Chain', supplychain_path
         %li
-          %a{:href => "#"} Lean
+          = link_to 'Lean Six Sigma', lean_path

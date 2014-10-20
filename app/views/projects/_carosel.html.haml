@@ -1,0 +1,20 @@
+%div#carousel-main-page.carousel.slide{"data-ride" => "carousel"}
+  %ol.carousel-indicators
+    %li.active{"data-target" => "#carousel-main-page", "data-slide-to" => "0"}
+    %li{"data-target" => "#carousel-main-page", "data-slide-to" => "1"}
+    %li{"data-target" => "#carousel-main-page", "data-slide-to" => "2"}
+
+  %div.carousel-inner
+    %div.item.active
+      %img{:src => "http://lorempixel.com/400/200/"}
+      %div.carousel-caption Slide Caption 1
+    %div.item
+      %img{:src => "http://lorempixel.com/400/200/sports/"}
+    %div.item
+      %img{:src => "http://lorempixel.com/400/200/sports/Dummy-Text/"}
+
+  %a.left.carousel-control{:href => "#carousel-main-page", :role => "button", "data-slide" => "prev"}
+    %span.glyphicon.glyphicon-chevron-left
+
+  %a.right.carousel-control{:href => "#carousel-main-page", :role => "button", "data-slide" => "next"}
+    %span.glyphicon.glyphicon-chevron-right
